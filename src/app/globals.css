@@ -19,3 +19,11 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@layer components{
+
+    .desktop-navbar{
+      @apply fixed z-50 flex flex-col items-center justify-center w-full mt-10 h-max
+    }
+}

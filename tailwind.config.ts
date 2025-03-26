@@ -1,3 +1,4 @@
+import { cutive } from "@/lib/fonts";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -9,9 +10,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        secondary: "#4d4d4d",
+        third:"#595958",
+        darkBg: ""
       },
+      backgroundImage: {
+        "gradient-cover":
+          "linear-gradient()"
+      },
+      fontFamily: {
+        cutive: ['var(--font-cutive)']
+      }
     },
   },
   plugins: [],
