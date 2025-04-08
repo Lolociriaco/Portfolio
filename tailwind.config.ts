@@ -20,7 +20,7 @@ export default {
       },
       fontFamily: {
         cutive: ['var(--font-cutive)']
-      }
+      },
     },
   },
   plugins: [],

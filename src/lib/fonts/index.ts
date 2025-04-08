@@ -10,7 +10,7 @@ export const cutive = Cutive({
 export const poppins = Poppins({
     variable: "--font-poppins",
     subsets: ["latin"],
-    weight: "600"
+    weight: "400"
 });
   
 

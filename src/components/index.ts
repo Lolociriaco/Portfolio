@@ -4,6 +4,6 @@ export { Sidebar } from "./ui/Sidebar";
 
 export { Presentation } from "./Presentation"
 
-export * from "./Tecnologies"
+export { Contact } from "./Contact"
 export * from "./AboutMe"
 export * from "./Expirience"

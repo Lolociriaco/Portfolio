@@ -18,6 +18,7 @@ export const MotionTransition = (props: MotionTransitionProps) => {
         initial="hidden"
         animate="visible"
         exit="hidden"
+        whileInView="animate"
         className={className}
       >
         {children}

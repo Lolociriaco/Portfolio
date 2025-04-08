@@ -19,9 +19,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const currentYear = new Date().getFullYear();
   return (
     <html lang="en">
-      <body className={`${urbanist.variable}  antialiased flex flex-col min-h-screen`}>
+      <body className={`${urbanist.variable} bg-gray-950 antialiased flex flex-col min-h-screen`}>
         
         {/* Navbar */}
         <Navbar/>
@@ -30,8 +32,8 @@ export default function RootLayout({
         {children}
 
         {/* Footer */}
-        <footer className="bg-gray-800 text-white text-center p-4">
-          © 2024 Lorenzo Ciriaco - Todos los derechos reservados
+        <footer className="block bg-gray-800 text-white text-center p-4">
+          © {currentYear} Lorenzo Ciriaco - Todos los derechos reservados
         </footer>
 
       </body>

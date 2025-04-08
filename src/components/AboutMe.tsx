@@ -1,13 +1,20 @@
 
+import { mont } from "@/lib/fonts"
 import { aboutMeData } from "@/seed/data"
-import { div } from "framer-motion/client"
+import { Transition } from "./shared/Transition"
+import { section } from "framer-motion/client"
 
 export const AboutMe = () => {
-  return (
-        <section id="about" className="flex flex-col items-center w-full p-5 lg:px-10 xl:px-20">
-          <div className="flex flex-col items-center w-full max-w-[1400px] border rounded-lg border-gray-800 py-10 gap-10">
-            <h2 className="text-3xl font-semibold">About me</h2>
-            <ul className="flex gap-10 flex-wrap">
+
+  return(
+    <section id="about-me">
+      <Transition
+          className="flex flex-col justify-center items-center w-full margin_section">
+          <div className="w-full max_w_section">
+            <h2 className={`${mont.className} text-5xl md:text-5xl font-semibold mb-10 text-red-400`}>
+              About me
+            </h2>
+            <div className="flex flex-col justify-center w-full items-center">
             {
               aboutMeData.map((data, index) => (
                   (
@@ -17,14 +24,12 @@ export const AboutMe = () => {
                           <p>{ data.description }</p>
                       </div>
                   )
-              ))
-            }
-            </ul>
+                ))
+              }
+            </div>
           </div>
-        </section>
+        </Transition>
+    </section>
   )
 }
-
-
-
 

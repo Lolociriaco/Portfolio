@@ -1,6 +1,6 @@
 "use client"
 
-import useUiStore from '@/store/ui-store'
+import useUiStore from '@/utils/ui-store'
 import clsx from 'clsx'
 import Link from 'next/link'
 import React from 'react'
