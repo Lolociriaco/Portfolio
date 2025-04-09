@@ -15,12 +15,12 @@ export const Presentation = () => {
   return (
     <section id="home" className="flex justify-center items-center h-screen w-full mb-4 md:mb-16 px-5 md:px-10">
 
-      <div className="max_w_section w-full flex flex-wrap-reverse justify-center items-center sm:gap-3 lg:gap-10 md:flex-nowrap">
+      <div className="max_w_section w-full flex flex-wrap-reverse justify-between items-center sm:gap-3 lg:gap-10 md:flex-nowrap">
 
         <MotionTransition position="left" >
 
-          <div className="mt-14">
-            <h1 className={`${mont.className} font-semibold inline-block mt-4 text-6xl md:text-[90px] antialiased`}>
+          <div className="mt-14 w-full">
+            <h1 className={`${mont.className} font-semibold mt-4 text-6xl md:text-[80px] antialiased`}>
             Lorenzo Ciriaco
             </h1>
 
@@ -29,7 +29,7 @@ export const Presentation = () => {
               <span className={`${mont.className} antialiased text-red-400`} >{ ' </>' }</span>
             </h2>
 
-            <p className="md:text-2xl text-gray-400 pr-10">
+            <p className="text-xl max-w-[900px] mt-1 text-gray-400">
               {presentationData[1].descripcion}
             </p>
 
@@ -60,7 +60,7 @@ export const Presentation = () => {
 
           </div>
         </MotionTransition>
-        <MotionTransition position="right" className="w-full min-w-[350px] flex justify-center items-center">
+        <MotionTransition position="right" className="w-fit min-w-[350px] flex justify-center items-center">
           <Image
             src="/images/Image-CV.jpeg"
             width={1000}

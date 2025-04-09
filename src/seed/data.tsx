@@ -1,11 +1,13 @@
 import { BookText, CodeSquare, HomeIcon, UserRound } from "lucide-react";
 import { BiLogoTypescript } from "react-icons/bi";
-import { FaCss3Alt, FaHtml5, FaLinkedin, FaReact } from "react-icons/fa";
+import { DiMsqlServer } from "react-icons/di";
+import { FaCss3Alt, FaGitAlt, FaHtml5, FaLinkedin, FaReact } from "react-icons/fa";
 import { FaSquareJs } from "react-icons/fa6";
 import { FiPhone } from "react-icons/fi";
 import { GrLocation } from "react-icons/gr";
 import { IoLogoGithub, IoMdMail } from "react-icons/io";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { SiCashapp, SiCplusplus } from "react-icons/si";
 
 //CREADO APARTE, SE PUEDE BORRAR DESPUES
 
@@ -16,7 +18,7 @@ export const presentationData = [
     },
     {
         saludo: "Hi! I'am",
-        descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laborum nostrum esse placeat impedit voluptate accusamus eos nihil! Similique architecto nostrum vero dolorum quis quas odit nisi ut quod asperiores"
+        descripcion: "Advanced student of Programming and Teaching Assistant in C++ Programming at the National Technological University (UTN)."
     }
 ]
 
@@ -113,6 +115,22 @@ export const tecnologiesData = [
         icon: <RiTailwindCssFill size={50}/>,
         name: "Tailwind"
     },
+    {
+        icon: <SiCplusplus size={50}/>,
+        name: "C++"
+    },
+    {
+        icon: <img src="/images/c-sharp.png" alt="C#" style={{width:"56px"}} />,
+        name: "C#"
+    },
+    {
+        icon: <DiMsqlServer size={50}/>,
+        name: "SQL Server"
+    },
+    {
+        icon: <FaGitAlt size={50}/>,
+        name: "Git"
+    },
 ]
 
 export const academicData = [
@@ -147,7 +165,7 @@ export const contactData = [
         platform: "Phone",
         icon: <FiPhone  size={30} />,
         data: "+54 11 3061-2259",
-        src: "https://www.linkedin.com/in/lorenzo-ciriaco-0a69161b7/"
+        src: null
     },
     {
         platform: "Email",
@@ -162,16 +180,16 @@ export const contactData = [
         src: "https://www.linkedin.com/in/lorenzo-ciriaco-0a69161b7/"
     },
     {
-        platform: "Location",
-        icon: <GrLocation size={30} />,
-        data: "Buenos Aires, Argentina",
-        src: null
-    },
-    {
         platform: "Github",
         icon: <IoLogoGithub size={30} />,
         data: "Lorenzo Ciriaco",
         src: "https://github.com/Lolociriaco"
+    },
+    {
+        platform: "Location",
+        icon: <GrLocation size={30} />,
+        data: "Buenos Aires, Argentina",
+        src: ""
     },
 ]
 
@@ -228,7 +246,7 @@ export const itemsNavbar = [
 export const aboutMeData = [
     {
         title: "About me",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam ducimus totam eaque dolores corrupti laborum, natus quia reprehenderit dolor sint voluptas repudiandae beatae, explicabo quidem recusandae veniam. Natus, praesentium."
+        description: "Passionate about technology and software development, with a strong foundation in both frontend and backend tools. Skilled in C++, Git, Microsoft SQL Server, and modern web technologies such as React, Next.js, Tailwind CSS, and JavaScript. Currently advancing my studies in Programming and Information Systems, while working as a Teaching Assistant in C++ Programming at the National Technological University (UTN). Always eager to learn, build, and grow."
     },
     {
         title: "Sobre mi",
