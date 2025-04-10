@@ -1,13 +1,9 @@
 import { BookText, CodeSquare, HomeIcon, UserRound } from "lucide-react";
-import { BiLogoTypescript } from "react-icons/bi";
-import { DiMsqlServer } from "react-icons/di";
-import { FaCss3Alt, FaGitAlt, FaHtml5, FaLinkedin, FaReact } from "react-icons/fa";
-import { FaSquareJs } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { GrLocation } from "react-icons/gr";
 import { IoLogoGithub, IoMdMail } from "react-icons/io";
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiCashapp, SiCplusplus } from "react-icons/si";
+
 
 //CREADO APARTE, SE PUEDE BORRAR DESPUES
 
@@ -26,61 +22,72 @@ export const presentationData = [
 export const cardData = [
     {
         img: "/images/Portada-PlantasVsZombies.png",
-        title: "Plantas vs Zombies",
-        description: "Esta es la descripcion del juego lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laborum nostrum esse placeat impedit voluptate accusamus eos nihil! Similique architecto nostrum vero dolorum quis quas odit nisi ut quod asperiores lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laborum nostrum esse placeat impedit voluptate accusamus eos nihil! Similique architecto nostrum vero dolorum quis quas odit nisi ut quod asperiores",
-        link: "link para ver el repo",
-        secondLink: "link para ver el repo",
-        alt: "explicacion",
-        tecnologies: ["HTML", "CSS", "JS"]
+        title: "Plantas vs Profes",
+        description: "Plantas vs Profes is a Tower Defense video game where you must defend your university from a horde of furious professors and administrators.",
+        items: [
+          "📺 Intuitive menu with a record system.",
+          "⚔️ Progressive levels with increasing difficulty.",
+          "🪴 Different types of plants with special abilities.",
+          "🎵 Music and sound effects.",
+        ],
+        link: "https://github.com/Lolociriaco/PlantasVsProfes",
+        alt: "Start menu image",
+        tecnologies: [
+            {
+                tech: "C++",
+                icon: <img src="/icons/cplusplus.png" alt="C++" style={{ width: "20px" }} />,
+            },
+            {
+                tech: "SFML",
+                icon: <img src="/icons/sfml.png" alt="SFML" style={{ width: "20px" }} />,
+            },
+        ]
     },
     {
         img: "/images/Portada-pagina-cabañas.png",
-        title: "Cabañas Inty Mayu",
-        description: "Esta es la descripcion del juego",
-        link: "link para ver el repo",
-        secondLink: "link para ver el repo",
-        alt: "explicacion",
-        tecnologies: ["HTML", "CSS", "JS"]
+        title: "Cabañas Inti Mayu",
+        description: "Fully responsive website created for a cabin resort, offering visitors a seamless experience to:",
+        items: [
+          "🏡 Explore detailed information about the cabins.",
+          "📖 Learn about the history of the place.",
+          "🛎️ Make cabin reservations quickly and easily.",
+          "📍 View the distance to nearby beaches with a single click.",
+        ],
+        link: "https://github.com/Lolociriaco/INTI_MAYU",
+        alt: "Cabains Inti Mayu homepage",
+        tecnologies: [
+            {
+                tech: "HTML",
+                icon: <img src="/icons/html.png" alt="HTML" style={{ width: "20px" }} />,
+            },
+            {
+                tech: "CSS",
+                icon: <img src="/icons/css.png" alt="CSS" style={{ width: "20px" }} />,
+            },
+            {
+                tech: "JavaScript",
+                icon: <img src="/icons/js.png" alt="JavaScript" style={{ width: "18px" }} />,
+            },
+        ]
 
     },
     {
-        img: "/images/Portada-pagina-cabañas.png",
-        title: "Cabañas Inty Mayu4",
-        description: "Esta es la descripcion del juego",
-        link: "link para ver el repo",
-        secondLink: "link para ver el repo",
-        alt: "explicacion",
-        tecnologies: ["HTML", "CSS", "JS"]
-
-    },
-    {
-        img: "/images/Portada-pagina-cabañas.png",
-        title: "Cabañas Inty Mayu3",
-        description: "Esta es la descripcion del juego",
-        link: "link para ver el repo",
-        secondLink: "link para ver el repo",
-        alt: "explicacion",
-        tecnologies: ["HTML", "CSS", "JS"]
-
-    },
-    {
-        img: "/images/Portada-pagina-cabañas.png",
-        title: "Cabañas Inty Mayu2",
-        description: "Esta es la descripcion del juego",
-        link: "link para ver el repo",
-        secondLink: "link para ver el repo",
-        alt: "explicacion",
-        tecnologies: ["HTML", "CSS", "JS"]
-
-    },
-    {
-        img: "/images/Portada-pagina-cabañas.png",
-        title: "Cabañas Inty Mayu1",
-        description: "Esta es la descripcion del juego",
-        link: "link para ver el repo",
-        secondLink: "link para ver el repo",
-        alt: "explicacion",
-        tecnologies: ["HTML", "CSS", "JS"]
+        img: "/images/Portada-batalla-naval.jpeg",
+        title: "Batalla Naval",
+        description: "Developed as a college project, this console-based Battleship game offers 1v1 gameplay, dynamic colors, a scoring system, and a user-friendly terminal interface.",
+        items: [
+          "🚢 Classic 1v1 Battleship gameplay.",
+          "🏆 Scoring system to track victories.",
+          "⌨️ Clean and engaging interface using rlutil."
+        ],
+        link: "https://github.com/Lolociriaco/JUEGO-BATALLA-NAVAL",
+        alt: "Screnshot of the game",
+        tecnologies: [
+            {
+                tech: "C++",
+                icon: <img src="/icons/cplusplus.png" alt="C++" style={{ width: "20px" }} />,
+            },
+        ]
 
     },
 ]
@@ -88,72 +95,69 @@ export const cardData = [
 
 export const tecnologiesData = [
     {
-        icon: <FaHtml5 size={50}/>,
-        name: "HTML"
+        icon: <img src="/icons/html.png" alt="HTML" style={{ width: "56px" }} />,
+        bg_color: "bg-orange-500"
     },
     {
-        icon: <FaCss3Alt size={50}/>,
-        name: "CSS"
+        icon: <img src="/icons/css.png" alt="CSS" style={{ width: "56px" }} />,
+        bg_color: "bg-blue-500"
     },
     {
-        icon: <FaSquareJs size={50}/>,
-        name: "JavaScript"
+        icon: <img src="/icons/js.png" alt="JavaScript" style={{ width: "56px" }} />,
+        bg_color: "bg-yellow-400"
     },
     {
-        icon: <FaReact size={50}/>,
-        name: "React"
+        icon: <img src="/icons/typescript.png" alt="TypeScript" style={{ width: "56px" }} />,
+        bg_color: "bg-blue-600"
     },
     {
-        icon: <RiNextjsFill size={50}/>,
-        name: "Next.Js"
+        icon: <img src="/icons/react.png" alt="React" style={{ width: "56px" }} />,
+        bg_color: "bg-cyan-400"
     },
     {
-        icon: <BiLogoTypescript size={50}/>,
-        name: "TypeScript"
+        icon: <img src="/icons/next.js.png" alt="Next.js" style={{ width: "56px" }} />,
+        bg_color: "bg-neutral-200"
     },
     {
-        icon: <RiTailwindCssFill size={50}/>,
-        name: "Tailwind"
+        icon: <img src="/icons/tailwind.png" alt="Tailwind" style={{ width: "56px" }} />,
+        bg_color: "bg-sky-400"
     },
     {
-        icon: <SiCplusplus size={50}/>,
-        name: "C++"
+        icon: <img src="/icons/cplusplus.png" alt="C++" style={{ width: "56px" }} />,
+        bg_color: "bg-blue-800"
     },
     {
-        icon: <img src="/images/c-sharp.png" alt="C#" style={{width:"56px"}} />,
-        name: "C#"
+        icon: <img src="/icons/csharp.png" alt="C#" style={{ width: "56px" }} />,
+        bg_color: "bg-fuchsia-800"
     },
     {
-        icon: <DiMsqlServer size={50}/>,
-        name: "SQL Server"
+        icon: <img src="/icons/sql-server.png" alt="SQL Server" style={{ width: "56px" }} />,
+        bg_color: "bg-rose-600"
     },
     {
-        icon: <FaGitAlt size={50}/>,
-        name: "Git"
-    },
+        icon: <img src="/icons/git.png" alt="Git" style={{ width: "56px" }} />,
+        bg_color: "bg-orange-600"
+    }
 ]
 
 export const academicData = [
     {
-        id: 1,
         title: "Technical Degree in Programming",
-        description: "En esta carrera, aprenderás a crear aplicaciones web interactivas y funcionales utilizando tecnologías modernas como HTML, CSS, JavaScript y frameworks populares.",
+        description: "Focused on developing technical skills, soft skills, and practical knowledge to work independently or in teams in software programming and IT systems.",
         institution: "UTN FRGP",
         inProgress: true,
     },
     {
-        id: 2,
-        title: "Technical Degree in Programming",
-        description: "En esta carrera, aprenderás a crear aplicaciones web interactivas y funcionales utilizando tecnologías modernas como HTML, CSS, JavaScript y frameworks populares.",
-        institution: "UTN FRGP",
-        inProgress: true,
+        title: "Next.js for Production: SSR, Middleware, APIs & More",
+        description: "Build production-ready applications with Next.js using SSR, dynamic routes, middleware, authentication, cookies, and multi-platform deployment through practical, real-world examples.",
+        institution: "Udemy",
+        inProgress: false,
     },
     {
-        id: 3,
-        title: "Technical Degree in Programming",
-        description: "En esta carrera, aprenderás a crear aplicaciones web interactivas y funcionales utilizando tecnologías modernas como HTML, CSS, JavaScript y frameworks populares.",
-        institution: "UTN FRGP",
-        inProgress: true,
+        title: "React Mastery: Hooks, Router, Redux, and More",
+        description: "Modern React development using Hooks, React Router, Context, Redux, Testing, and best practices — all reinforced through hands-on projects.",
+        institution: "Udemy",
+        inProgress: false,
     },
     
     
@@ -217,27 +221,27 @@ export const socialNetworks = [
 export const itemsNavbar = [
     {
         title: "Home",
-        icon: <HomeIcon size={25} color="#fff" strokeWidth={1} />,
+        icon: <HomeIcon size={25} strokeWidth={1} />,
         link: "home",
     },
     {
         title: "Proyects",
-        icon: <BookText size={25} color="#fff" strokeWidth={1} />,
+        icon: <BookText size={25} strokeWidth={1} />,
         link: "proyects",
     },
     {
         title: "Expirience",
-        icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
+        icon: <CodeSquare size={25} strokeWidth={1} />,
         link: "expirience",
     },
     {
         title: "About me",
-        icon: <UserRound size={25} color="#fff" strokeWidth={1} />,
+        icon: <UserRound size={25} strokeWidth={1} />,
         link: "about-me",
     },
     {
         title: "Contact",
-        icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
+        icon: <CodeSquare size={25} strokeWidth={1} />,
         link: "contact",
     },
 ];
@@ -245,11 +249,6 @@ export const itemsNavbar = [
 
 export const aboutMeData = [
     {
-        title: "About me",
         description: "Passionate about technology and software development, with a strong foundation in both frontend and backend tools. Skilled in C++, Git, Microsoft SQL Server, and modern web technologies such as React, Next.js, Tailwind CSS, and JavaScript. Currently advancing my studies in Programming and Information Systems, while working as a Teaching Assistant in C++ Programming at the National Technological University (UTN). Always eager to learn, build, and grow."
-    },
-    {
-        title: "Sobre mi",
-        description: "descripsion en español Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sit obcaecati provident ullam maxime in totam modi at, culpa omnis aliquam. Veniam dignissimos aspernatur eveniet? Quis vitae architecto eius expedita"
     }
 ]

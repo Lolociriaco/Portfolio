@@ -33,7 +33,7 @@ export const Presentation = () => {
               {presentationData[1].descripcion}
             </p>
 
-            <div  className="flex gap-7 mt-5 items-center">
+            <div  className="flex gap-3 mt-5 items-center">
               <a
                 href="Curriculum - Ciriaco Lorenzo.pdf"
                 download="Curriculum - Ciriaco Lorenzo.pdf"
@@ -46,7 +46,8 @@ export const Presentation = () => {
                 socialNetworks.map(({ logo, src, id }) => (
                   <Link 
                     key={id}
-                    href={src}  
+                    href={src}
+                    className="p-2"  
                   >
                     {
                       <span className="hover:text-red-400 text-gray-200 transition-colors duration-150">

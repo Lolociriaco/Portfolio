@@ -29,7 +29,7 @@ export const Expirience = () => {
           {
             academicData.map((data, index) => (
               <motion.div 
-              key={data.id} 
+              key={index} 
               className="flex justify-between py-5"
               variants={fadeInAnimation}
               initial="initial"
@@ -64,7 +64,7 @@ export const Expirience = () => {
           <h2 className="text-3xl md:text-4xl font-semibold mb-10 ">
             Tecnologies
           </h2>
-            <ul className="flex justify-center gap-x-20 flex-wrap">
+            <ul className="flex justify-center gap-14 flex-wrap max-w-[600px] m-auto">
               {
                 tecnologiesData.map((tech, index) => (
                   <motion.li
@@ -73,11 +73,11 @@ export const Expirience = () => {
                   whileInView="animate"
                   viewport={{ once: true }} 
                   custom={index}
-                  key={tech.name}
-                  className="flex flex-col gap-1 items-center justify-center text-red-400 h-48"
+                  key={index}
+                  className={`relative flex flex-col gap-1 items-center justify-center h-20 w-20`}
                   >
+                    <span className={`${tech.bg_color} absolute -z-10 h-20 w-20 rounded-3xl blur-md bg-opacity-35`}></span>
                     { tech.icon }
-                    { tech.name }
                   </motion.li>
                 ))
               }

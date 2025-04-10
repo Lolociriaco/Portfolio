@@ -26,7 +26,7 @@ export const Navbar = () => {
 
         {/* Version de escritorio */}
 
-        <div className="hidden md:flex items-center justify-center  gap-2 px-4 py-2.5 rounded-full bg-gray-700/80 backdrop-blur shadow-lg shadow-gray-800">
+        <div className="hidden md:flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-gray-700/80 backdrop-blur shadow-lg shadow-gray-800">
             {
               itemsNavbar.map(item => (
               <button

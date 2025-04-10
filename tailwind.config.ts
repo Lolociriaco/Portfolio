@@ -24,4 +24,17 @@ export default {
     },
   },
   plugins: [],
+  safelist: [
+    "bg-orange-500",
+    "bg-blue-500",
+    "bg-yellow-400",
+    "bg-cyan-400",
+    "bg-neutral-200",
+    "bg-blue-600",
+    "bg-sky-400",
+    "bg-blue-800",
+    "bg-fuchsia-800",
+    "bg-rose-600",
+    "bg-orange-600"
+  ]
 } satisfies Config;

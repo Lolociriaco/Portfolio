@@ -19,7 +19,7 @@ p {
 }
 
 
-p, h3, h4{
+p, li , h3, h4{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -30,7 +30,7 @@ p, h3, h4{
 }
 
 .max_w_section {/* Se aplica en todos los section */
-  @apply max-w-[1400px];
+  @apply max-w-[1200px];
 }
 
 body {
