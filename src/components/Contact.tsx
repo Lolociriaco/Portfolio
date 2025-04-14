@@ -9,7 +9,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 export const Contact = () => {
 
-  const handleCopy = (text: string, platform: string) => {
+  const handleCopy = (text: string) => {
     navigator.clipboard.writeText(text);
 
     toast(`Copied to clipboard!`,
@@ -58,7 +58,7 @@ export const Contact = () => {
                       <div>
                         <h4
                           className={`${poppins.className} hover:text-red-400 cursor-pointer transition-all duration-250`}
-                          onClick={() => handleCopy(data.data, data.platform)}
+                          onClick={() => handleCopy(data.data)}
                         >
                           {data.data}
                         </h4>
