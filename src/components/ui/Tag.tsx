@@ -1,5 +1,5 @@
 import { mont } from "@/lib/fonts"
-import React, { JSX } from "react";
+import React from "react";
 
 interface Props {
     children: React.ReactNode;
