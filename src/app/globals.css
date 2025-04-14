@@ -25,8 +25,16 @@ p, li , h3, h4{
   font-size: 1rem;
 }
 
+h2{
+  @apply text-4xl lg:text-5xl text-red-400;
+}
+
 .margin_section {/* Se aplica en todos los section */
-  @apply pt-48 px-5 lg:px-10; 
+  @apply pt-16 md:pt-40 px-5 lg:px-10; 
+}
+
+.margin_section_aboutme {/* Se aplica en todos los section */
+  @apply pt-16 md:pt-64 px-5 lg:px-10; 
 }
 
 .max_w_section {/* Se aplica en todos los section */
@@ -39,6 +47,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.shape-custom{
+  shape-outside: circle();
+  -webkit-shape-outside: circle();
+  float: left;
+}
 
 @layer components{
 

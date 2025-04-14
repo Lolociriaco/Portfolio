@@ -10,7 +10,7 @@ const urbanist = Urbanist({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio Lorenzo Ciriaco",
+  title: "Lorenzo Ciriaco",
   description: "Portfolio made by Lorenzo Ciriaco",
 };
 
@@ -32,7 +32,7 @@ export default function RootLayout({
         {children}
 
         {/* Footer */}
-        <footer className="block bg-gray-800 text-white text-center p-4">
+        <footer className="block bg-gray-950 border-t border-gray-800 text-gray-200 text-center p-7">
           © {currentYear} Lorenzo Ciriaco - Todos los derechos reservados
         </footer>
 

@@ -9,7 +9,7 @@ export default function Proyects() {
     <section id="proyects"
       className="flex flex-col justify-center items-center w-full margin_section">
       <div className="w-full max_w_section">
-        <h2 className={`${mont.className} text-5xl md:text-5xl font-semibold mb-10 text-red-400`}>
+        <h2 className={`${mont.className} md:text-5xl font-semibold mb-10`}>
           Proyectos Descatables
         </h2>
         <div className="flex flex-col justify-center w-full items-center">

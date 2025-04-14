@@ -1,6 +1,4 @@
-"use client"
 import { mont } from "@/lib/fonts"
-import { motion } from "framer-motion"
 
 interface Props {
     children: string;

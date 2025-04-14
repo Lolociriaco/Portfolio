@@ -23,7 +23,7 @@ export const Expirience = () => {
       <div className="flex flex-col lg:flex-row justify-between w-full max_w_section">
 
         <div className="w-full">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-10">
+          <h2 className="text-center lg:text-start font-semibold mb-10 lg:mb-14">
             Academic Training
           </h2>
           {
@@ -61,7 +61,7 @@ export const Expirience = () => {
         <div className="border-2 right-1 m-10 lg:mx-10 lg:my-20 rounded-lg border-gray-700"/>
         
         <div className="w-full lg:mx-0">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-10 ">
+          <h2 className="text-center lg:text-start font-semibold mb-14">
             Tecnologies
           </h2>
             <ul className="flex justify-center gap-14 flex-wrap max-w-[600px] m-auto">

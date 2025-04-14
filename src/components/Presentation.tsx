@@ -13,23 +13,23 @@ export const Presentation = () => {
 
 
   return (
-    <section id="home" className="flex justify-center items-center h-screen w-full mb-4 md:mb-16 px-5 md:px-10">
+    <section id="home" className="flex justify-center items-start sm:items-center mt-7 sm:mt-0 h-screen w-full mb-4 md:mb-16 px-5 md:px-10">
 
-      <div className="max_w_section w-full flex flex-wrap-reverse justify-between items-center sm:gap-3 lg:gap-10 md:flex-nowrap">
+      <div className="max_w_section w-full flex flex-wrap-reverse justify-center md:justify-between items-center sm:gap-4 lg:gap-10 md:flex-nowrap">
 
         <MotionTransition position="left" >
 
-          <div className="mt-14 w-full">
+          <div className="mt-2 sm:mt-14 w-full">
             <h1 className={`${mont.className} font-semibold mt-4 text-6xl md:text-[80px] antialiased`}>
             Lorenzo Ciriaco
             </h1>
 
-            <h2 className={`${montThin.className} mt-2 text-2xl md:text-4xl`}>
+            <h3 className={`${montThin.className} mt-2 text-2xl md:text-4xl`}>
               Front-End Web Developer
               <span className={`${mont.className} antialiased text-red-400`} >{ ' </>' }</span>
-            </h2>
+            </h3>
 
-            <p className="text-xl max-w-[900px] mt-1 text-gray-400">
+            <p className="text-xl max-w-[800px] mt-1 text-gray-400">
               {presentationData[1].descripcion}
             </p>
 
@@ -67,15 +67,15 @@ export const Presentation = () => {
             width={1000}
             height={1000}
             priority
-            alt="mi foto :)"
-            className="w-[300px] h-[300px] md:w-[350px] md:h-auto rounded-full object-cover shadow-2xl shadow-zinc-700"
+            alt="Mi foto :)"
+            className="w-[300px] h-[300px] md:w-[350px] md:h-[350px] rounded-full object-cover shadow-2xl shadow-zinc-700"
           />
         </MotionTransition>
       </div>
       
         <IoIosArrowDown 
           size={45} 
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 "
+          className="absolute bottom-5 block md:bottom-10 left-1/2 -translate-x-1/2 "
         />
 
     </section>

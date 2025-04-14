@@ -2,12 +2,11 @@ import { montThin } from "@/lib/fonts";
 import Swal from "sweetalert2";
 
 
-
-
 export const Form = () => {
     //Sent form  
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const form  = event.currentTarget;
     const formData = new FormData(event.currentTarget);
 
     formData.append("access_key", "d10370ef-2e06-4174-8d21-6f6c1090e4c8");
@@ -26,20 +25,25 @@ export const Form = () => {
 
     if (res.success) {
         Swal.fire({
-            title: "Success!",
-            text: "Message sent successfully!",
+            title: "Message Sent!",
+            text: "Thank you for reaching out! I'll get back to you as soon as possible.",
             icon: "success",
             color: "oklch(0.869 0.022 252.894)",
             confirmButtonColor: "oklch(0.373 0.034 259.733)",
             background: "oklch(0.279 0.041 260.031)",
             backdrop: `oklch(0.293 0.066 243.157, 0.6)`
-          });
+          })
+          .then(() => {
+            // Reset form
+            form.reset();
+          }) 
+
     }
   };
 
 
   return (
-    <form onSubmit={onSubmit} className="w-full space-y-8 px-5 md:px-0">
+    <form onSubmit={onSubmit} className="w-full space-y-8">
         <div>
             <label
             htmlFor="name"

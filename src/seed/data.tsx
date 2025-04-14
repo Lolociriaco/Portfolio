@@ -1,9 +1,14 @@
 import { BookText, CodeSquare, HomeIcon, UserRound } from "lucide-react";
+import { JSX } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { GrLocation } from "react-icons/gr";
 import { IoLogoGithub, IoMdMail } from "react-icons/io";
 
+export interface Tech {
+    tech: string;
+    icon: JSX.Element;
+}
 
 //CREADO APARTE, SE PUEDE BORRAR DESPUES
 
@@ -27,12 +32,12 @@ export const cardData = [
         items: [
           "📺 Intuitive menu with a record system.",
           "⚔️ Progressive levels with increasing difficulty.",
-          "🪴 Different types of plants with special abilities.",
+          "🪴 Different plants with special abilities.",
           "🎵 Music and sound effects.",
         ],
         link: "https://github.com/Lolociriaco/PlantasVsProfes",
         alt: "Start menu image",
-        tecnologies: [
+        technologies: [
             {
                 tech: "C++",
                 icon: <img src="/icons/cplusplus.png" alt="C++" style={{ width: "20px" }} />,
@@ -41,7 +46,7 @@ export const cardData = [
                 tech: "SFML",
                 icon: <img src="/icons/sfml.png" alt="SFML" style={{ width: "20px" }} />,
             },
-        ]
+        ] as Tech[]
     },
     {
         img: "/images/Portada-pagina-cabañas.png",
@@ -55,7 +60,7 @@ export const cardData = [
         ],
         link: "https://github.com/Lolociriaco/INTI_MAYU",
         alt: "Cabains Inti Mayu homepage",
-        tecnologies: [
+        technologies:[
             {
                 tech: "HTML",
                 icon: <img src="/icons/html.png" alt="HTML" style={{ width: "20px" }} />,
@@ -68,11 +73,11 @@ export const cardData = [
                 tech: "JavaScript",
                 icon: <img src="/icons/js.png" alt="JavaScript" style={{ width: "18px" }} />,
             },
-        ]
+        ] as Tech[]
 
     },
     {
-        img: "/images/Portada-batalla-naval.jpeg",
+        img: "/images/Portada-batalla-naval.png",
         title: "Batalla Naval",
         description: "Developed as a college project, this console-based Battleship game offers 1v1 gameplay, dynamic colors, a scoring system, and a user-friendly terminal interface.",
         items: [
@@ -82,12 +87,12 @@ export const cardData = [
         ],
         link: "https://github.com/Lolociriaco/JUEGO-BATALLA-NAVAL",
         alt: "Screnshot of the game",
-        tecnologies: [
+        technologies: [
             {
                 tech: "C++",
                 icon: <img src="/icons/cplusplus.png" alt="C++" style={{ width: "20px" }} />,
             },
-        ]
+        ] as Tech[]
 
     },
 ]
@@ -249,6 +254,7 @@ export const itemsNavbar = [
 
 export const aboutMeData = [
     {
-        description: "Passionate about technology and software development, with a strong foundation in both frontend and backend tools. Skilled in C++, Git, Microsoft SQL Server, and modern web technologies such as React, Next.js, Tailwind CSS, and JavaScript. Currently advancing my studies in Programming and Information Systems, while working as a Teaching Assistant in C++ Programming at the National Technological University (UTN). Always eager to learn, build, and grow."
+        description: "Passionate about technology and software development, with a strong foundation in both frontend and backend tools. Skilled in C++, Git, Microsoft SQL Server, and modern web technologies such as React, Next.js, Tailwind CSS, and JavaScript. Currently advancing my studies in Programming and Information Systems, while working as a Teaching Assistant in C++ Programming at the National Technological University (UTN). Always eager to learn, build, and grow.",
+        image: "/images/Lorenzo-Ciriaco.jpg",
     }
 ]
