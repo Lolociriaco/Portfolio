@@ -25,6 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${urbanist.variable} bg-gray-950 antialiased flex flex-col min-h-screen`}>
         
+
         {/* Navbar */}
         <Navbar/>
         <Sidebar/>

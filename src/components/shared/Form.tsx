@@ -43,7 +43,7 @@ export const Form = () => {
 
 
   return (
-    <form onSubmit={onSubmit} className="w-full space-y-8">
+    <form onSubmit={onSubmit} className="w-full space-y-5">
         <div>
             <label
             htmlFor="name"
@@ -55,7 +55,7 @@ export const Form = () => {
             type="text"
             id="name"
             name="name"
-            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+            className="shadow-sm bg-gray-700 border mt-1 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  border-gray-500 placeholder-gray-400 text-gray-200 shadow-sm-light"
             placeholder="Your name"
             required
             />
@@ -71,7 +71,7 @@ export const Form = () => {
             type="email"
             id="email"
             name="email"
-            className="block p-3 w-full text-sm rounded-lg border  shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
+            className="block p-3 w-full text-sm rounded-lg border mt-1 shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-500 placeholder-gray-400 text-gray-200 shadow-sm-light"
             placeholder="youremail@gmail.com"
             required
             />
@@ -86,13 +86,13 @@ export const Form = () => {
             <textarea
             id="message"
             name="message"
-            className="block p-2.5 w-full h-60 text-sm text-gray-900 rounded-lg shadow-sm border  focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 dark:text-white focus:ring-primary-500 focus:border-primary-500"
+            className="block p-2.5 w-full h-60 text-sm mt-1 text-gray-200 rounded-lg shadow-sm border  focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-500 placeholder-gray-400"
             placeholder="Your message"
             ></textarea>
         </div>
         <button
             type="submit"
-            className="py-3 px-5 text-md font-medium  focus:outline-none rounded-lg border focus:z-10 focus:ring-4  focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 transition-all duration-200"
+            className="py-3 px-5 text-md font-medium mt-1 focus:outline-none rounded-lg border focus:z-10 focus:ring-4  focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 transition-all duration-200"
         >
             Send message
         </button>

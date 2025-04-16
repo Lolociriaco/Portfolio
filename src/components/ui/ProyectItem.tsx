@@ -26,10 +26,10 @@ export const ProyectItem = ({ title, link, description, technologies, img, items
 
                 <div className="flex flex-col justify-between w-full pt-3 pb-2 px-3 xl:px-5">
                     <div>
-                        <h2 className={`${montThin.className} flex gap-2 relative font-semibold text-2xl lg:text-3xl mb-3 transition-all duration-300 ease-in-out group-hover:text-red-400`}>
+                        <h3 className={`${montThin.className} flex gap-2 relative font-semibold text-2xl lg:text-3xl mb-3 transition-all duration-300 ease-in-out text-white group-hover:text-red-400`}>
                             {title}
                             <IoMdOpen className="group-hover:translate-x-2 mt-2 -ml-0.5 group-hover:-translate-y-2 transition-all duration-300 ease-in-out" size={20} />
-                        </h2>
+                        </h3>
 
                         <p className="text-gray-400 text-md max-w-[500px] lg:max-w-[650px]">{description}</p>
                     {

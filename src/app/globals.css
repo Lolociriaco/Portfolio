@@ -2,17 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 p {
   color: oklch(0.707 0.022 261.325);
@@ -42,10 +32,31 @@ h2{
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #0d0f1c;
+  font-family: sans-serif;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
 }
+
+.gradiente-top {
+  position: absolute;
+  top: -850px; /* lo subimos para que solo se vea la parte de abajo del gradiente */
+  left: 50%;  
+  transform: translateX(-50%);
+  width: 1500px;
+  height: 1500px;
+  background: radial-gradient(
+    circle,
+    #28314d 0%,
+    transparent 70%
+  );
+  z-index: -50;
+  overflow: visible;
+  pointer-events: none;
+}
+
 
 .shape-custom{
   shape-outside: circle();

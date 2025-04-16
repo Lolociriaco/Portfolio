@@ -1,4 +1,5 @@
 "use client"
+import { mont } from "@/lib/fonts";
 import { academicData, tecnologiesData } from "@/seed/data";
 import { motion } from "framer-motion";
 import { HiMiniAcademicCap } from "react-icons/hi2";
@@ -23,9 +24,9 @@ export const Expirience = () => {
       <div className="flex flex-col lg:flex-row justify-between w-full max_w_section">
 
         <div className="w-full">
-          <h2 className="text-center lg:text-start font-semibold mb-10 lg:mb-14">
+          <h3 className={`${mont.className} text-center lg:text-start font-semibold mb-10 lg:mb-14 text-4xl lg:text-[40px] text-red-400`}>
             Academic Training
-          </h2>
+          </h3>
           {
             academicData.map((data, index) => (
               <motion.div 
@@ -40,7 +41,7 @@ export const Expirience = () => {
                 <div className="flex gap-5">
                   <HiMiniAcademicCap size={35} className="text-red-400"/>
                   <div className="flex flex-col">
-                    <h4 className="flex gap-5 text-2xl items-center">
+                    <h4 className="flex gap-5 text-2xl text-gray-200 items-center">
                       {data.title}
                     </h4>
                     <h3>{data.institution}</h3>
@@ -61,9 +62,9 @@ export const Expirience = () => {
         <div className="border-2 right-1 m-10 lg:mx-10 lg:my-20 rounded-lg border-gray-700"/>
         
         <div className="w-full lg:mx-0">
-          <h2 className="text-center lg:text-start font-semibold mb-14">
+          <h3 className={`${mont.className} text-center lg:text-start font-semibold mb-14 text-4xl lg:text-[40px] text-red-400`}>
             Tecnologies
-          </h2>
+          </h3>
             <ul className="flex justify-center gap-14 flex-wrap max-w-[600px] m-auto">
               {
                 tecnologiesData.map((tech, index) => (

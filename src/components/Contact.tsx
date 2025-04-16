@@ -30,12 +30,12 @@ export const Contact = () => {
         position="bottom-left"
         reverseOrder={false}
         />
-      <Transition className="bg-white dark:bg-gray-950 flex flex-col h-fit justify-center items-center w-full pb-20 margin_section">
+      <Transition className="flex flex-col h-fit justify-center items-center w-full pb-20 margin_section">
         <div className="w-full max_w_section">
           <h2 className={`${mont.className} mb-4 tracking-tight font-extrabold text-center `}>
             Contact Me
           </h2>
-          <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+          <p className="mb-8 lg:mb-16 font-light text-center text-gray-400 sm:text-xl">
             Are you looking for a programmer? Let me know.
           </p>
 
@@ -44,11 +44,11 @@ export const Contact = () => {
               {contactData.map(data => (
                 <div key={data.platform} className="flex gap-6 mt-7">
                   <div className="flex justify-center mt-1 text-red-400">{data.icon}</div>
-                  <div className="flex flex-col gap-2">
-                    <h3 className={`${montThin.className} text-xl`}>{data.platform}</h3>
+                  <div className="flex flex-col gap-1">
+                    <h3 className={`${montThin.className} text-gray-200 text-xl`}>{data.platform}</h3>
                     {data.src ? (
                       <Link
-                        className="hover:text-red-400 transition-all duration-250"
+                        className="hover:text-red-400 text-gray-300 transition-all duration-250"
                         href={data.src}
                         target="_blank"
                       >
@@ -56,12 +56,25 @@ export const Contact = () => {
                       </Link>
                     ) : (
                       <div>
-                        <h4
-                          className={`${poppins.className} hover:text-red-400 cursor-pointer transition-all duration-250`}
+                        {
+                          data.platform === "Location" ?
+                          (
+                          <h4
+                          className={`${poppins.className} text-gray-300`}
                           onClick={() => handleCopy(data.data)}
-                        >
-                          {data.data}
-                        </h4>
+                          >
+                            {data.data}
+                          </h4>
+                          )
+                          :
+                          (
+                          <h4
+                            className={`${poppins.className} hover:text-red-400 text-gray-300 cursor-pointer transition-all duration-250`}>
+                            {data.data}
+                          </h4>
+                          )
+
+                        }
                       </div>
                     )}
                   </div>

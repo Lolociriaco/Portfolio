@@ -13,23 +13,25 @@ export const Presentation = () => {
 
 
   return (
-    <section id="home" className="flex justify-center items-start sm:items-center mt-7 sm:mt-0 h-screen w-full mb-4 md:mb-16 px-5 md:px-10">
+    <section id="home" className="flex justify-center relative visible items-start sm:items-center mt-7 sm:mt-0 h-screen w-full mb-4 md:mb-16 px-5 md:px-10">
+      <div className="gradiente-top"></div>
+
 
       <div className="max_w_section w-full flex flex-wrap-reverse justify-center md:justify-between items-center sm:gap-4 lg:gap-10 md:flex-nowrap">
 
         <MotionTransition position="left" >
 
-          <div className="mt-2 sm:mt-14 w-full">
-            <h1 className={`${mont.className} font-semibold mt-4 text-6xl md:text-[80px] antialiased`}>
+          <div className="mt-2 sm:mt-14 w-full z-20">
+            <h1 className={`${mont.className} font-semibold mt-4 text-gray-100 text-6xl md:text-[80px] antialiased z-20`}>
             Lorenzo Ciriaco
             </h1>
 
-            <h3 className={`${montThin.className} mt-2 text-2xl md:text-4xl`}>
+            <h3 className={`${montThin.className} mt-2 text-gray-200 text-2xl md:text-4xl z-20`}>
               Front-End Web Developer
-              <span className={`${mont.className} antialiased text-red-400`} >{ ' </>' }</span>
+              <span className={`${mont.className} z-20 antialiased text-red-400`} >{ ' </>' }</span>
             </h3>
 
-            <p className="text-xl max-w-[800px] mt-1 text-gray-400">
+            <p className="text-xl max-w-[800px] mt-1 text-gray-400 z-20">
               {presentationData[1].descripcion}
             </p>
 
@@ -68,14 +70,14 @@ export const Presentation = () => {
             height={1000}
             priority
             alt="Mi foto :)"
-            className="w-[300px] h-[300px] md:w-[350px] md:h-[350px] rounded-full object-cover shadow-2xl shadow-zinc-700"
+            className="w-[300px] h-[300px] md:w-[350px] md:h-[350px] rounded-full object-cover shadow-sm shadow-zinc-800"
           />
         </MotionTransition>
       </div>
       
         <IoIosArrowDown 
           size={45} 
-          className="absolute bottom-5 block md:bottom-10 left-1/2 -translate-x-1/2 "
+          className="absolute bottom-5 block md:bottom-10 left-1/2 text-white -translate-x-1/2 z-20"
         />
 
     </section>
