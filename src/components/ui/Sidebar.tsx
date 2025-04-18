@@ -44,7 +44,7 @@ export const Sidebar = () => {
             {/* Sidebar */}
             <div className={
                 clsx(
-                    'fixed p-5 top-0 right-0 w-[300px] h-screen z-20 bg-gray-950 shadow-2xl transform transition-all duration-500',
+                    'fixed p-5 top-0 right-0 w-[300px] h-screen z-50 bg-gray-950 shadow-2xl transform transition-all duration-500',
                     {
                         "translate-x-full": !isSidebarOpen,
                     }
@@ -55,7 +55,7 @@ export const Sidebar = () => {
                 <nav>
                     <X
                         size={35}
-                        className='absolute top-5 right-6 cursor-pointer'
+                        className='absolute top-5 right-6 cursor-pointer text-gray-100'
                         onClick={closeMenu}
                     />
 

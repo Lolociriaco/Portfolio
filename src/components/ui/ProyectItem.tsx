@@ -26,7 +26,7 @@ export const ProyectItem = ({ title, link, description, technologies, img, items
 
                 <div className="flex flex-col justify-between w-full pt-3 pb-2 px-3 xl:px-5">
                     <div>
-                        <h3 className={`${montThin.className} flex gap-2 relative font-semibold text-2xl lg:text-3xl mb-3 transition-all duration-300 ease-in-out text-white group-hover:text-red-400`}>
+                        <h3 className={`${montThin.className} flex gap-2 relative font-semibold text-2xl lg:text-3xl mb-3 transition-all duration-300 ease-in-out text-gray-100 group-hover:text-red-400`}>
                             {title}
                             <IoMdOpen className="group-hover:translate-x-2 mt-2 -ml-0.5 group-hover:-translate-y-2 transition-all duration-300 ease-in-out" size={20} />
                         </h3>
@@ -49,7 +49,7 @@ export const ProyectItem = ({ title, link, description, technologies, img, items
                     <ul className="flex gap-2 flex-wrap">
                         {
                             technologies.map(tecnologies => (
-                                <Tag key={tecnologies.tech} className="flex flex-row  justify-center items-center gap-2">
+                                <Tag key={tecnologies.tech} className={`${tecnologies.bg_color} px-7 mt-4 py-2 bg-opacity-15 gap-2`}>
                                     {tecnologies.icon}
                                     {tecnologies.tech}
                                 </Tag>

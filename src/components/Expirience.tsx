@@ -1,8 +1,9 @@
 "use client"
-import { mont } from "@/lib/fonts";
+import { mont, montThin } from "@/lib/fonts";
 import { academicData, tecnologiesData } from "@/seed/data";
 import { motion } from "framer-motion";
 import { HiMiniAcademicCap } from "react-icons/hi2";
+import { Tag } from "./ui/Tag";
 
 export const Expirience = () => {
 
@@ -39,20 +40,22 @@ export const Expirience = () => {
               custom={index}
               >
                 <div className="flex gap-5">
-                  <HiMiniAcademicCap size={35} className="text-red-400"/>
+                  <HiMiniAcademicCap size={40} className="text-red-400"/>
                   <div className="flex flex-col">
-                    <h4 className="flex gap-5 text-2xl text-gray-200 items-center">
-                      {data.title}
-                    </h4>
-                    <h3>{data.institution}</h3>
-                    <p className="mt-3 max-w-[500px]">{data.description}</p>
+                    <div className="flex gap-3">
+                      <h4 className={`${montThin.className} flex text-2xl text-gray-100 items-center`}>
+                        {data.title}
+                      </h4>
+                      {
+                        data.inProgress && (
+                          <span className="mt-2 text-gray-400">In progress</span>
+                        )
+                      }
+                    </div>
+                    <Tag className={`${data.institution_color} mt-2 py-1 px-2 inline-block w-24 bg-opacity-25`}>{data.institution}</Tag>
+                    <p className="mt-3 max-w-[480px]">{data.description}</p>
                   </div>
                 </div>
-                {
-                  data.inProgress && (
-                    <span className="mt-2 text-gray-400">In progress</span>
-                  )
-                }
               </motion.div>
             ))
           }

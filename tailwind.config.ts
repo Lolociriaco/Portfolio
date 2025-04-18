@@ -35,6 +35,8 @@ export default {
     "bg-blue-800",
     "bg-fuchsia-800",
     "bg-rose-600",
-    "bg-orange-600"
+    "bg-orange-600",
+    "bg-violet-500",
+    "bg-orange-400"
   ]
 } satisfies Config;

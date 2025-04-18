@@ -14,14 +14,14 @@ export const Presentation = () => {
 
   return (
     <section id="home" className="flex justify-center relative visible items-start sm:items-center mt-7 sm:mt-0 h-screen w-full mb-4 md:mb-16 px-5 md:px-10">
-      <div className="gradiente-top"></div>
+      
+      <div className="md:gradiente-top"></div>
 
-
-      <div className="max_w_section w-full flex flex-wrap-reverse justify-center md:justify-between items-center sm:gap-4 lg:gap-10 md:flex-nowrap">
+      <div className="max_w_section w-full flex flex-wrap-reverse h-[85vh] justify-center md:justify-between items-center sm:gap-4 lg:gap-10 md:flex-nowrap">
 
         <MotionTransition position="left" >
 
-          <div className="mt-2 sm:mt-14 w-full z-20">
+          <div className="mt-5 sm:mt-14 w-full z-20">
             <h1 className={`${mont.className} font-semibold mt-4 text-gray-100 text-6xl md:text-[80px] antialiased z-20`}>
             Lorenzo Ciriaco
             </h1>
@@ -70,14 +70,14 @@ export const Presentation = () => {
             height={1000}
             priority
             alt="Mi foto :)"
-            className="w-[300px] h-[300px] md:w-[350px] md:h-[350px] rounded-full object-cover shadow-sm shadow-zinc-800"
+            className="w-[280px] h-[280px] md:w-[350px] md:h-[350px] rounded-full object-cover shadow-sm shadow-zinc-800"
           />
         </MotionTransition>
       </div>
       
         <IoIosArrowDown 
           size={45} 
-          className="absolute bottom-5 block md:bottom-10 left-1/2 text-white -translate-x-1/2 z-20"
+          className="absolute bottom-10 block left-1/2 text-white -translate-x-1/2 z-20"
         />
 
     </section>

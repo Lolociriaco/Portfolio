@@ -8,6 +8,7 @@ import { IoLogoGithub, IoMdMail } from "react-icons/io";
 export interface Tech {
     tech: string;
     icon: JSX.Element;
+    bg_color: string;
 }
 
 //CREADO APARTE, SE PUEDE BORRAR DESPUES
@@ -41,10 +42,13 @@ export const cardData = [
             {
                 tech: "C++",
                 icon: <img src="/icons/cplusplus.png" alt="C++" style={{ width: "20px" }} />,
+                bg_color: "bg-blue-800"
             },
             {
                 tech: "SFML",
                 icon: <img src="/icons/sfml.png" alt="SFML" style={{ width: "20px" }} />,
+                bg_color: "bg-green-500"
+
             },
         ] as Tech[]
     },
@@ -64,14 +68,17 @@ export const cardData = [
             {
                 tech: "HTML",
                 icon: <img src="/icons/html.png" alt="HTML" style={{ width: "20px" }} />,
+                bg_color: "bg-orange-500",
             },
             {
                 tech: "CSS",
                 icon: <img src="/icons/css.png" alt="CSS" style={{ width: "20px" }} />,
+                bg_color: "bg-blue-500",
             },
             {
                 tech: "JavaScript",
                 icon: <img src="/icons/js.png" alt="JavaScript" style={{ width: "18px" }} />,
+                bg_color: "bg-yellow-400",
             },
         ] as Tech[]
 
@@ -91,6 +98,7 @@ export const cardData = [
             {
                 tech: "C++",
                 icon: <img src="/icons/cplusplus.png" alt="C++" style={{ width: "20px" }} />,
+                bg_color: "bg-blue-800"
             },
         ] as Tech[]
 
@@ -150,18 +158,21 @@ export const academicData = [
         title: "Technical Degree in Programming",
         description: "Focused on developing technical skills, soft skills, and practical knowledge to work independently or in teams in software programming and IT systems.",
         institution: "UTN FRGP",
+        institution_color: "bg-orange-400",
         inProgress: true,
     },
     {
         title: "Next.js for Production: SSR, Middleware, APIs & More",
         description: "Build production-ready applications with Next.js using SSR, dynamic routes, middleware, authentication, cookies, and multi-platform deployment through practical, real-world examples.",
         institution: "Udemy",
+        institution_color: "bg-violet-500",
         inProgress: false,
     },
     {
         title: "React Mastery: Hooks, Router, Redux, and More",
         description: "Modern React development using Hooks, React Router, Context, Redux, Testing, and best practices — all reinforced through hands-on projects.",
         institution: "Udemy",
+        institution_color: "bg-violet-500",
         inProgress: false,
     },
     

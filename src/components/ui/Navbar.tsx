@@ -57,7 +57,7 @@ export const Navbar = () => {
         <div className="md:hidden fixed right-6 top-5">
           <AlignJustify
             size={40} 
-            className="w-8 h-8"
+            className="w-8 h-8 text-gray-100"
             onClick={openMenu}
           />
         </div>
