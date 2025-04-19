@@ -42,11 +42,11 @@ body {
 
 .gradiente-top {
   position: absolute;
-  top: -850px; /* lo subimos para que solo se vea la parte de abajo del gradiente */
+  top: -55vw; /* lo subimos para que solo se vea la parte de abajo del gradiente */
   left: 50%;  
   transform: translateX(-50%);
-  width: 1500px;
-  height: 1500px;
+  width: 100vw;
+  height: 100vw;
   background: radial-gradient(
     circle,
     #28314d 0%,

@@ -6,6 +6,7 @@ import { AlignJustify } from "lucide-react";
 import { MotionTransition } from "../shared/MotionTransition";
 import { montThin } from "@/lib/fonts";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 
 export const Navbar = () => {
@@ -20,13 +21,41 @@ export const Navbar = () => {
 
     if (pathname !== '/') return null;
 
+    const [isMobile, setIsMobile] = useState<boolean | null>(null); // null al principio
+  
+    useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth < 874);
+      };
+  
+      handleResize(); // Ejecutar al montar
+  
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+    
+
+    if(isMobile){
+      return(
+      <MotionTransition position="right" className="absolute z-50 w-8 h-8 right-6 top-5">
+        <nav>
+          <AlignJustify
+            size={40} 
+            className="w-8 h-8 text-gray-100"
+            onClick={openMenu}
+          />
+        </nav>
+      </MotionTransition>
+      );
+    }
+
     return (
-    <MotionTransition position="right" className="fixed z-20 top-3 md:desktop-navbar">
+    <MotionTransition position="right" className="fixed z-20 top-3 desktop-navbar">
       <nav>
 
         {/* Version de escritorio */}
 
-        <div className="hidden md:flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-gray-700/80 backdrop-blur shadow-lg shadow-gray-800">
+        <div className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-gray-700/80 backdrop-blur shadow-lg shadow-gray-800">
             {
               itemsNavbar.map(item => (
               <button
@@ -51,39 +80,8 @@ export const Navbar = () => {
               </button>
             ))}
         </div>
-          
-        {/* Mobile */}
-
-        <div className="md:hidden fixed right-6 top-5">
-          <AlignJustify
-            size={40} 
-            className="w-8 h-8 text-gray-100"
-            onClick={openMenu}
-          />
-        </div>
-        
       </nav>
     </MotionTransition>
   );
 };
 
-
-/*      <nav className="relative w-full bg-gray-900 text-white p-4 flex items-center justify-between">
-        {/* Menú de navegación centrado respecto a la pantalla }
-        <ul className="absolute left-1/2 -translate-x-1/2 flex space-x-6 text-lg font-semibold">
-          <li className="hover:text-blue-400 cursor-pointer">About Me</li>
-          <li className="hover:text-blue-400 cursor-pointer">Projects</li>
-          <li className="hover:text-blue-400 cursor-pointer">Languages</li>
-        </ul>
-  
-        {/* Botones alineados a la derecha }
-        <div className="ml-auto flex space-x-4">
-          <button className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg shadow-md">
-            Contact
-          </button>
-          <button className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg shadow-md">
-            Hire Me
-          </button>
-        </div>
-      </nav>
-    ); */

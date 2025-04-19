@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${urbanist.variable} bg-gray-950 antialiased flex flex-col min-h-screen`}>
-        
+      <div className="gradiente-top"></div>
 
         {/* Navbar */}
         <Navbar/>

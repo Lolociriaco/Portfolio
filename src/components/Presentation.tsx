@@ -15,14 +15,13 @@ export const Presentation = () => {
   return (
     <section id="home" className="flex justify-center relative visible items-start sm:items-center mt-7 sm:mt-0 h-screen w-full mb-4 md:mb-16 px-5 md:px-10">
       
-      <div className="md:gradiente-top"></div>
 
-      <div className="max_w_section w-full flex flex-wrap-reverse h-[85vh] justify-center md:justify-between items-center sm:gap-4 lg:gap-10 md:flex-nowrap">
+      <div className="max_w_section w-full flex flex-wrap-reverse h-[85vh] justify-around md:justify-between md:items-center sm:gap-4 lg:gap-10 md:flex-nowrap">
 
         <MotionTransition position="left" >
 
           <div className="mt-5 sm:mt-14 w-full z-20">
-            <h1 className={`${mont.className} font-semibold mt-4 text-gray-100 text-6xl md:text-[80px] antialiased z-20`}>
+            <h1 className={`${mont.className} font-semibold mt-4 text-gray-100 text-5xl sm:text-6xl md:text-[80px] antialiased z-20`}>
             Lorenzo Ciriaco
             </h1>
 
@@ -63,14 +62,14 @@ export const Presentation = () => {
 
           </div>
         </MotionTransition>
-        <MotionTransition position="right" className="w-fit min-w-[350px] flex justify-center items-center">
+        <MotionTransition position="right" className="w-fit min-w-[300px] flex justify-center items-center">
           <Image
-            src="/images/Image-CV.jpeg"
+            src="/images/Image-CV.jpg"
             width={1000}
             height={1000}
             priority
             alt="Mi foto :)"
-            className="w-[280px] h-[280px] md:w-[350px] md:h-[350px] rounded-full object-cover shadow-sm shadow-zinc-800"
+            className="w-[75vw] h-[75vw] md:w-[350px] md:h-[350px] rounded-full object-cover shadow-sm shadow-zinc-800"
           />
         </MotionTransition>
       </div>
