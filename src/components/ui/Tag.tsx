@@ -1,4 +1,4 @@
-import { mont, montThin } from "@/lib/fonts"
+import { montThin } from "@/lib/fonts"
 import React from "react";
 
 interface Props {

@@ -19,21 +19,21 @@ export const Navbar = () => {
     //const sectionRef = useRef<HTMLDivElement>(null);
     const pathname = usePathname()
 
-    if (pathname !== '/') return null;
-
+    
     const [isMobile, setIsMobile] = useState<boolean | null>(null); // null al principio
-  
+    
     useEffect(() => {
       const handleResize = () => {
         setIsMobile(window.innerWidth < 874);
       };
-  
+      
       handleResize(); // Ejecutar al montar
-  
+      
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
     }, []);
     
+    if (pathname !== '/') return null;
 
     if(isMobile){
       return(
