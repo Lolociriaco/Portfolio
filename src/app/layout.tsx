@@ -34,7 +34,8 @@ export default function RootLayout({
 
         {/* Footer */}
         <footer className="block bg-gray-950 border-t border-gray-800 text-gray-200 text-center p-7">
-          © {currentYear} Lorenzo Ciriaco - Todos los derechos reservados
+          © {currentYear} © Lorenzo Ciriaco — Portfolio project. Assets belong to their respective owners.
+
         </footer>
 
       </body>
