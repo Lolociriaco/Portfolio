@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { HiMiniAcademicCap } from "react-icons/hi2";
 import { Tag } from "./ui/Tag";
 
-export const Expirience = () => {
+export const Training = () => {
 
   const fadeInAnimation = {
     initial: { opacity: 0, y: 100 },
@@ -20,7 +20,7 @@ export const Expirience = () => {
   }
 
   return (
-    <section id="expirience"
+    <section id="training"
       className="flex flex-col justify-center items-center w-full margin_section">
       <div className="flex flex-col lg:flex-row justify-between w-full max_w_section">
 

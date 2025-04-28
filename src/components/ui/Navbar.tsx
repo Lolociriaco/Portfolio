@@ -1,6 +1,5 @@
 "use client"
 import { itemsNavbar } from "@/seed/data";
-// Si usas Next.js
 import useUiStore from "@/utils/ui-store";
 import { AlignJustify } from "lucide-react";
 import { MotionTransition } from "../shared/MotionTransition";
@@ -61,12 +60,12 @@ export const Navbar = () => {
               <button
                 key={item.title}
                 onClick={() => {
-                  const element = document.getElementById(item.link);
-                  element?.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start",
-                  })
-                }}
+                const element = document.getElementById(String(item.link));
+                element?.scrollIntoView({ 
+                  
+                  behavior: 'smooth', 
+                });  
+              }}
               >
                 <span className="flex items-center justify-center gap-2 text-white bg-gray-800 hover: focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-7 py-2 xl:mx-3 hover:text-red-400 transition-all duration-200" 
                  

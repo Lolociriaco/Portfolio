@@ -1,4 +1,4 @@
-import { BookText, CodeSquare, HomeIcon, UserRound } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, Phone, UserRound } from "lucide-react";
 import { JSX } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
@@ -242,13 +242,13 @@ export const itemsNavbar = [
     },
     {
         title: "Proyects",
-        icon: <BookText size={25} strokeWidth={1} />,
+        icon: <CodeSquare size={25} strokeWidth={1} />,
         link: "proyects",
     },
     {
-        title: "Expirience",
-        icon: <CodeSquare size={25} strokeWidth={1} />,
-        link: "expirience",
+        title: "Training",
+        icon: <BookText size={25} strokeWidth={1} />,
+        link: "training",
     },
     {
         title: "About me",
@@ -257,7 +257,7 @@ export const itemsNavbar = [
     },
     {
         title: "Contact",
-        icon: <CodeSquare size={25} strokeWidth={1} />,
+        icon: <Phone size={25} strokeWidth={1} />,
         link: "contact",
     },
 ];
