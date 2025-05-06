@@ -57,10 +57,10 @@ export const Contact = () => {
                     ) : (
                       <div>
                         {
-                          data.platform === "Location" ?
+                          data.platform === "Phone" ?
                           (
                           <h4
-                          className={`${poppins.className} text-gray-300`}
+                          className={`${poppins.className} hover:text-red-400 text-gray-300 cursor-pointer transition-all duration-250`}
                           onClick={() => handleCopy(data.data)}
                           >
                             {data.data}
@@ -69,11 +69,10 @@ export const Contact = () => {
                           :
                           (
                           <h4
-                            className={`${poppins.className} hover:text-red-400 text-gray-300 cursor-pointer transition-all duration-250`}>
+                            className={`${poppins.className} text-gray-300`}>
                             {data.data}
                           </h4>
                           )
-
                         }
                       </div>
                     )}

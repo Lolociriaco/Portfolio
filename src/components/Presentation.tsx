@@ -62,14 +62,14 @@ export const Presentation = () => {
 
           </div>
         </MotionTransition>
-        <MotionTransition position="right" className="w-fit min-w-[300px] flex justify-center items-center">
+        <MotionTransition position="right" className="w-fit min-w-[300px] md:min-w-[350px] flex justify-center items-center">
           <Image
             src="/images/Image-CV.jpg"
             width={1000}
             height={1000}
             priority
             alt="Mi foto :)"
-            className="w-[75vw] h-[75vw] md:w-[350px] md:h-[350px] rounded-full object-cover shadow-sm shadow-zinc-800"
+            className="w-[300px] h-[300px] md:w-[350px] md:h-[350px] rounded-full object-cover shadow-sm shadow-zinc-800"
           />
         </MotionTransition>
       </div>
