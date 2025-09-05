@@ -9,7 +9,7 @@ export const AboutMe = () => {
   return (
     <section id="about-me">
       <Transition
-        className="flex flex-col justify-center items-center w-full margin_section_aboutme">
+        className="flex flex-col justify-center items-center w-full margin_section">
         <div className="w-full max_w_section">
           <div className="w-full">
           {

@@ -23,10 +23,6 @@ h2{
   @apply pt-16 md:pt-40 px-5 lg:px-10; 
 }
 
-.margin_section_aboutme {/* Se aplica en todos los section */
-  @apply pt-16 md:pt-64 px-5 lg:px-10; 
-}
-
 .max_w_section {/* Se aplica en todos los section */
   @apply max-w-[1200px];
 }
