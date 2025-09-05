@@ -54,7 +54,7 @@ export const cardData = [
     },
     {
         img: "/images/Portada-pagina-cabañas.png",
-        title: "Cabañas Inti Mayu",
+        title: "Inti Mayu Cabins",
         description: "Fully responsive website created for a cabin resort, offering visitors a seamless experience to:",
         items: [
           "🏡 Explore detailed information about the cabins.",
@@ -85,7 +85,7 @@ export const cardData = [
     },
     {
         img: "/images/Portada-batalla-naval.png",
-        title: "Batalla Naval",
+        title: "Battleship",
         description: "Developed as a college project, this console-based Battleship game offers 1v1 gameplay, dynamic colors, a scoring system, and a user-friendly terminal interface.",
         items: [
           "🚢 Classic 1v1 Battleship gameplay.",

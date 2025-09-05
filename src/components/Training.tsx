@@ -52,7 +52,7 @@ export const Training = () => {
                         )
                       }
                     </div>
-                    <Tag className={`${data.institution_color} mt-2 py-1 px-2 inline-block w-24 bg-opacity-25`}>{data.institution}</Tag>
+                    <Tag className={`${data.institution_color} mt-2 py-1 px-2 inline-block w-24 bg-opacity-15`}>{data.institution}</Tag>
                     <p className="mt-3 max-w-[480px]">{data.description}</p>
                   </div>
                 </div>

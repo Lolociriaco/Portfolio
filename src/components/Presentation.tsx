@@ -40,7 +40,7 @@ export const Presentation = () => {
                 download="Curriculum - Ciriaco Lorenzo.pdf"
               >
                 <Button>
-                  Curriculum
+                  Resume
                 </Button>
               </a>
               {
